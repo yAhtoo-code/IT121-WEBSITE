@@ -1,5 +1,9 @@
 body {
     background-image: url("image4.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
 }
 
 .other-title {
@@ -45,17 +49,13 @@ body {
 }
 
 .topnav1 {
-    background-color: burlywood;
     display: flex;
-    justify-content: center;  
-    margin-bottom: 0%;
+    justify-content: center;   
+    background-color: burlywood;
 }
-
 .topnav1 ul {
-   list-style-type: 
-   none;
+   list-style-type: none;
 }
-
 .topnav1 li {
     display: inline;
 }
@@ -68,10 +68,8 @@ body {
     padding: 3px 16px;
     font-size: 25px;
     text-align: center;
-    margin-bottom: 0%;
 }
 
 .topnav1 li a:hover {
     color: white;
 }
-
