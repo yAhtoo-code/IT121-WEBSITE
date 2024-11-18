@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: goldenrod;
+    background-color: greenyellow;
 }
 
 .title {
@@ -11,29 +15,60 @@ body {
 
 .topnav1 {
     text-align: right;
+    background-color: black;
 }
 
 .topnav1 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-
+  
 .topnav1 li {
-    display: inline;
+    float: right;
 }
-
-.topnav1 li a {
-    color: black;
+  
+li a, .dropbtn {
     font-family: 'Karla', sans-serif;
-    text-decoration: none;
-    padding-right: 5.5px;
-    font-size: 20px;
+    display: inline-block;
+    color: white;
     text-align: center;
-    opacity: 1; 
-    transition: opacity 0.6s; 
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-.topnav1 li a:hover {
+li a:hover, .dropdown:hover .dropbtn {
     transition: 0.6s ease;
-    opacity: 0.3;
-    color: white;
+
+}
+  
+li.dropdown {
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    font-size: 19px;
+    color: greenyellow;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+ 
+.dropdown:hover .dropdown-content {
+    display: block;
 }
