@@ -3,7 +3,11 @@ html {
 }
 
 body {
+<<<<<<< HEAD
     background-color: greenyellow;
+=======
+    background-color: goldenrod;
+>>>>>>> 451e136042a099c28261c8d55bb2ce784151a893
 }
 
 .title {
@@ -15,6 +19,7 @@ body {
 
 .topnav1 {
     text-align: right;
+<<<<<<< HEAD
     background-color: black;
 }
 
@@ -72,3 +77,31 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+=======
+}
+
+.topnav1 ul {
+    list-style-type: none;
+}
+
+.topnav1 li {
+    display: inline;
+}
+
+.topnav1 li a {
+    color: black;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+    padding-right: 5.5px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 1; 
+    transition: opacity 0.6s; 
+}
+
+.topnav1 li a:hover {
+    transition: 0.6s ease;
+    opacity: 0.3;
+    color: white;
+}
+>>>>>>> 451e136042a099c28261c8d55bb2ce784151a893

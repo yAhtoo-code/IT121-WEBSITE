@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
 }
 
 body {
     background-color: greenyellow;
+=======
+body {
+    background-color: goldenrod;
+>>>>>>> 451e136042a099c28261c8d55bb2ce784151a893
 }
 
 .content {
@@ -40,6 +45,7 @@ body {
     transition: 0.6s ease;
     opacity: 0.3;
     color: white;
+<<<<<<< HEAD
     cursor: pointer;
 }
 .parent-container {
@@ -73,4 +79,30 @@ body {
 }
 
 
+=======
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+}
+
+.image-column img {
+    display: inline;
+    margin-right: 1.85%;
+    width: 300px;
+    cursor: pointer;
+}
+
+.hover-effect {
+    transition: transform 0.5s ease; 
+    border: 5px solid #000; 
+    border-radius: 8px; 
+}
+
+.hover-effect:hover {
+    transform: scale(1.3);
+    box-shadow: 0 25px 50px -12px rgb(255 255 0 / 1);
+}
+>>>>>>> 451e136042a099c28261c8d55bb2ce784151a893
 
