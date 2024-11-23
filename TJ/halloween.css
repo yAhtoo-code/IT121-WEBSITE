@@ -8,6 +8,13 @@ body {
     font-family: 'Karla', sans-serif;
 }
 
+.content {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 20px;   
+}
+
 .topnav1 {
     display: flex;
     align-items: center;
@@ -19,11 +26,6 @@ body {
 .feu-logo img {
     width: 250px; 
     height: auto;
-}
-
-.feu-logo img:hover {
-    filter: drop-shadow(1px 1px 18px rgb(255, 230, 0)); 
-    transition: transform 0.3s ease, filter 0.3s ease; 
 }
 
 .topnav1 ul {
@@ -82,9 +84,35 @@ li.dropdown {
     display: block;
 }
 
-.title {
-    text-align: center;
-    color: black;
-    font-size: xx-large;
-    margin-top: 20px;
+.parent-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
+
+.image-gallery {
+    display: flex;
+    height: 40rem; 
+    width: 74rem;
+    gap: 1rem; 
+    
+}
+
+.image-gallery > div {
+    flex: 1; 
+    border-radius: 1rem; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4); 
+    border: 5px black solid;
+}
+
+.image-gallery > div:hover {
+    cursor: pointer;
+    flex: 3.8; 
+    box-shadow: 10px 25px 50px 0px rgb(0, 89, 255);
+}
+
+
+

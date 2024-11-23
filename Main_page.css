@@ -56,7 +56,7 @@ body {
   .hero {
     position: relative;
     height: 100vh;
-    background: url(kiel-images/169.png) center/cover no-repeat;
+    background: url(Main_page_images/169.png) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
