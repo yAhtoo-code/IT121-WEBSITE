@@ -3,16 +3,24 @@ html {
 }
 
 body {
-    background-color: rgba(47, 255, 47, 0.801);
+    background-image: url(halloween_bg.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
     margin: 0;
-    font-family: 'Karla', sans-serif;
 }
 
 .content {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: rgb(255, 230, 0);
     font-size: 20px;   
+    text-shadow: 
+        2px 2px 0 black,   /* Bottom right shadow */
+        -2px 2px 0 black,  /* Bottom left shadow */
+        2px -2px 0 black,  /* Top right shadow */
+        -2px -2px 0 black; /* Top left shadow */
 }
 
 .topnav1 {
@@ -111,7 +119,23 @@ li.dropdown {
 .image-gallery > div:hover {
     cursor: pointer;
     flex: 3.8; 
-    box-shadow: 10px 25px 50px 0px rgb(0, 89, 255);
+    box-shadow: 10px 25px 50px 0px rgb(255, 153, 0);
+}
+
+.description {
+    position: absolute;
+    color: rgb(255, 230, 0);
+    padding: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    text-shadow: 
+        2px 2px 0 black,   /* Bottom right shadow */
+        -2px 2px 0 black,  /* Bottom left shadow */
+        2px -2px 0 black,  /* Top right shadow */
+        -2px -2px 0 black; /* Top left shadow */
 }
 
 
