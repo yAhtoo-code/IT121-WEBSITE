@@ -11,6 +11,19 @@ body {
     margin: 0;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+  
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,40 +36,41 @@ header {
     height: 80px;
     width: 100%;
     z-index: 10;
-  }
+}
   
-  .logo {
+.logo {
     display: flex;
     align-items: center;
-  }
+}
   
-  .logo img {
-    height: 60px;
+.logo img {
+    height: 35px;
     margin-right: 0.5rem;
-  }
+}
   
-  nav ul {
+.nav ul {
     list-style: none;
     display: flex;
-    gap: 1.5rem;
-  }
+}
   
-  nav a {
+.nav a {
     text-decoration: none;
     color: #046307;
     font-size: 1rem;
     transition: color 0.3s;
-  }
+}
   
-  nav a:hover {
+.nav a:hover {
     color: #034a05;
     background-color: #ffe498;
     border-radius: 10px;
     padding: 5px;
     transition: 0.09s;
-  }
+}
 
 .content {
+    margin-top: 7%;
+    padding: 2rem;
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(255, 230, 0);
@@ -145,7 +159,7 @@ li.dropdown {
 
 .image-gallery {
     display: flex;
-    height: 40rem; 
+    height: 30rem; 
     width: 74rem;
     gap: 1rem; 
     
@@ -157,18 +171,18 @@ li.dropdown {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4); 
+    transition: all 0.4s cubic-bezier(0.25, 0.4, 0.45, 1.4); 
     border: 5px black solid;
 }
 
 .image-gallery > div:hover {
     cursor: pointer;
-    flex: 3.8; 
+    flex: 2.2; 
     box-shadow: 10px 25px 50px 0px rgb(255, 153, 0);
 }
 
 .description {
-    position: absolute;
+    position: relative; /* Changed from absolute to relative */
     color: rgb(255, 230, 0);
     padding: 20px;
     font-size: 1.5rem;
@@ -177,11 +191,83 @@ li.dropdown {
     justify-content: center;
     font-family: 'Karla', sans-serif;
     text-shadow: 
-        2px 2px 0 black,   /* Bottom right shadow */
-        -2px 2px 0 black,  /* Bottom left shadow */
-        2px -2px 0 black,  /* Top right shadow */
-        -2px -2px 0 black; /* Top left shadow */
+        2px 2px 0 black,
+        -2px 2px 0 black,
+        2px -2px 0 black,
+        -2px -2px 0 black;
 }
+
+footer {
+    background-color: #0d4e26;
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap items to prevent overflow */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 50px;
+    flex-direction: column; /* Stack links vertically */
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.social-links li::before {
+    content: "●";
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.social-links li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        gap: 20px;
+    }
+}
+
 
 
 
