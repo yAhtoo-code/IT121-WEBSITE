@@ -21,7 +21,7 @@ body {
     text-align: center;
     justify-content: center;
     color: rgb(0, 0, 0);
-    font-size: 35px;   
+    font-size: 40px;   
 }
   
   
@@ -70,6 +70,9 @@ nav a:hover {
     transition: 0.09s;
 }
 
+.description {
+    font-size: 20px;
+}
 
 .image-grid {
     display: grid;
@@ -80,7 +83,6 @@ nav a:hover {
     border-radius: 8px; 
 
 }
-
 
 .grid-image {
     width: 100%; 
