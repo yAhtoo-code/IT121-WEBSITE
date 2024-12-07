@@ -41,36 +41,6 @@ header {
     z-index: 10;
 }
   
-.logo {
-    display: flex;
-    align-items: center;
-}
-  
-.logo img {
-    height: 35px;
-    margin-right: 0.5rem;
-}
-  
-.nav ul {
-    list-style: none;
-    display: flex;
-}
-  
-.nav a {
-    text-decoration: none;
-    color: #046307;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-  
-.nav a:hover {
-    color: #034a05;
-    background-color: #ffe498;
-    border-radius: 10px;
-    padding: 5px;
-    transition: 0.09s;
-}
-
 .content {
     margin-top: 7%;
     padding: 2rem;
@@ -85,74 +55,71 @@ header {
         -2px -2px 0 black; /* Top left shadow */
 }
 
-.topnav1 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.900);
-    padding: 10px 20px;
-}
-
-.feu-logo img {
-    width: 250px; 
-    height: auto;
-}
-
-.topnav1 ul {
+/* General Navbar Styling */
+nav ul {
     list-style-type: none;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
-}
-
-.topnav1 li {
-    margin-left: 20px;
-}
-
-li a, .dropbtn {
-    color: white;
-    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  nav li {
+    float: left; /* Ensure dropdown is positioned relative to the parent */
+  }
+  
+  /* Navbar Links */
+  nav li a, .dropbtn {
     text-decoration: none;
-    padding: 14px 16px;
-    font-size: 16px;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-    color: greenyellow;
-    transition: 0.6s ease;
-}
-
-li.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
+    color: #046307;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  /* Navbar Hover Effect */
+  nav li a:hover {
+    color: #2f4a03;
+    background-color: #ffe498;
+    border-radius: 20px;
+    transition: 0.09s;
+  }
+  
+  /* Dropdown Menu */
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
-
-.dropdown-content a {
+  }
+  
+  /* Dropdown Links */
+  .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-}
-
-.dropdown-content a:hover {
-    font-size: 17px;
-    color: rgb(252, 255, 47);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.dropdown:hover .dropdown-content {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dropdown Hover Effect */
+  .dropdown-content a:hover {
+    background-color: #ffe498; /* Background color for dropdown links */
+    border-radius: 10px;
+    color: #046307; /* Text color for dropdown links */
+  }
+  
+  /* Show Dropdown Menu on Hover */
+  .dropdown:hover .dropdown-content {
     display: block;
-}
+  }
 
 .parent-container {
     display: flex; 
