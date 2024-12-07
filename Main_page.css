@@ -36,25 +36,70 @@ header {
   margin-right: 0.5rem;
 }
 
+/* General Navbar Styling */
 nav ul {
-  list-style: none;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 1.5rem;
 }
 
-nav a {
+nav li {
+  float: left; /* Ensure dropdown is positioned relative to the parent */
+}
+
+/* Navbar Links */
+nav li a, .dropbtn {
   text-decoration: none;
   color: #046307;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #034a05;
+/* Navbar Hover Effect */
+nav li a:hover {
+  color: #2f4a03;
   background-color: #ffe498;
-  border-radius: 10px;
-  padding: 5px;
+  border-radius: 20px;
   transition: 0.09s;
+}
+
+/* Dropdown Menu */
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dropdown Hover Effect */
+.dropdown-content a:hover {
+  background-color: #ffe498; /* Background color for dropdown links */
+  border-radius: 10px;
+  color: #046307; /* Text color for dropdown links */
+}
+
+/* Show Dropdown Menu on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Hero Section */
@@ -331,3 +376,4 @@ footer {
 .social-links li a:hover {
   text-decoration: underline; /* Adds underline on hover */
 }
+
