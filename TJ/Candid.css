@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:wght@500;600;700&display-swap');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/yuji-mai/index.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; 
+}
+
+body {
+    height: 100vh;   
+    margin: 0;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 214, 137);
+}
+
+.content h3{
+    margin-top: 14%;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;   
+    font-family: "Yuji Mai";
+}
+  
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+}
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 35px;
+    margin-right: 0.5rem;
+}
+  
+/* General Navbar Styling */
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav li {
+    float: left; /* Ensure dropdown is positioned relative to the parent */
+  }
+  
+  /* Navbar Links */
+  nav li a, .dropbtn {
+    text-decoration: none;
+    color: #046307;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  /* Navbar Hover Effect */
+  nav li a:hover {
+    color: #2f4a03;
+    background-color: #ffe498;
+    border-radius: 20px;
+    transition: 0.09s;
+  }
+  
+  /* Dropdown Menu */
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Dropdown Links */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dropdown Hover Effect */
+  .dropdown-content a:hover {
+    background-color: #ffe498; /* Background color for dropdown links */
+    border-radius: 10px;
+    color: #046307; /* Text color for dropdown links */
+  }
+  
+  /* Show Dropdown Menu on Hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.description {
+    font-size: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    padding: 10px; 
+    background-color: rgb(255, 214, 137);
+    border-radius: 8px; 
+
+}
+
+.grid-image {
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 4 / 3; 
+    object-fit: cover; 
+    border-radius: 4px; 
+    transition: transform 0.3s ease; 
+}
+
+.grid-image:hover {
+    transform: scale(1.05); 
+    box-shadow: 10px 25px 50px 0px rgb(255, 251, 0);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #0d4e26; 
+    padding: 20px 0;
+    color: white;
+    position: static; 
+    bottom: 0; 
+    width: 100%; 
+    text-align: center; 
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  
+.logo img {
+    width: 150px;
+    height: auto;
+}
+  
+.logo img {
+    width: 150px;
+    height: auto;
+}
+  
+.social-links {
+    display: flex;
+    gap: 50px; 
+}
+  
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.social-links li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+  
+.social-links li::before {
+    content: "●";
+    margin-right: 10px;
+    color: white;
+    font-size: 14px;
+}
+  
+.social-links li {
+    color: white; 
+}
+  
+.social-links li a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 16px;
+}
+  
+.social-links li a:hover {
+    text-decoration: underline; 
+}

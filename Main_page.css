@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header Styling */
+/* Header Styling Start here for navbar*/
 header {
   display: flex;
   justify-content: space-between;
@@ -56,6 +56,7 @@ nav a:hover {
   padding: 5px;
   transition: 0.09s;
 }
+/*End here for navbar*/
 
 /* Hero Section */
 .hero {
@@ -173,8 +174,6 @@ h1 {
   background: #fff;
 }
 .content-container:hover {
-  border-color: #0d4e26;/* Change background color on hover */
-  border-width: 4px;
   transform: scale(1.05); /* Slightly increase size on hover */
 }
 
@@ -223,21 +222,21 @@ h1 {
 }
 
 /* LL */
-.daily-campus-experience {
+.campus-stories {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-.daily-campus-experience .content-container {
+.campus-stories .content-container {
   display: flex;
   flex-direction: row;
 }
-.daily-campus-experience img {
+.campus-stories img {
   width: 200px;
   height: 150px;
   flex-shrink: 0;
 }
-.daily-campus-experience .text-container {
+.campus-stories .text-container {
   flex-grow: 1;
 }
 
@@ -251,24 +250,47 @@ h1 {
   width: 100%;
   height: 250px;
 }
-.seasonal-events .content-highlight {
-  grid-column: span 2;
-}
-.featured-grid {
+.seasonal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
 }
-#about {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
+
+/* Grid Section */
+.grid-section {
+  padding: 20px;
+  background-color: #fff;
 }
 
-#about h2 {
-  font-size: 30px;
-  margin-bottom: 20px;
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
 }
+.grid-item:hover{
+  transform: scale(1.05);
+}
+/* Grid Item */
+.grid-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 15px;
+}
+
+/* Thumbnail */
+.thumbnail {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
 
 footer {
   background-color: #0d4e26; /* Match the dark blue background */
@@ -331,3 +353,4 @@ footer {
 .social-links li a:hover {
   text-decoration: underline; /* Adds underline on hover */
 }
+
