@@ -10,15 +10,15 @@ body, html {
   font-family: Arial, sans-serif;
 }
 
-/* Header Styling */
+/* Header Styling Start here for navbar*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: white; 
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
-  position: fixed; 
+  background-color: white; /* Solid background color for separation */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  position: fixed; /* Keep it fixed at the top */
   top: 0;
   height: 80px;
   width: 100%;
@@ -35,71 +35,27 @@ header {
   margin-right: 0.5rem;
 }
 
-/* General Navbar Styling */
 nav ul {
-  list-style-type: none;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+  list-style: none;
   display: flex;
   gap: 1.5rem;
 }
 
-nav li {
-  float: left; /* Ensure dropdown is positioned relative to the parent */
-}
-
-/* Navbar Links */
-nav li a, .dropbtn {
+nav a {
   text-decoration: none;
   color: #046307;
   font-size: 1rem;
   transition: color 0.3s;
 }
 
-/* Navbar Hover Effect */
-nav li a:hover {
-  color: #2f4a03;
+nav a:hover {
+  color: #034a05;
   background-color: #ffe498;
-  border-radius: 20px;
+  border-radius: 10px;
+  padding: 5px;
   transition: 0.09s;
 }
-
-/* Dropdown Menu */
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Dropdown Links */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dropdown Hover Effect */
-.dropdown-content a:hover {
-  background-color: #ffe498; /* Background color for dropdown links */
-  border-radius: 10px;
-  color: #046307; /* Text color for dropdown links */
-}
-
-/* Show Dropdown Menu on Hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+/*End here for navbar*/
 
 .hero-banner {
   position: relative;
