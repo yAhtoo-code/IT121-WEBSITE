@@ -49,70 +49,26 @@ header {
   
 /* General Navbar Styling */
 nav ul {
-    list-style-type: none;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+    list-style: none;
     display: flex;
     gap: 1.5rem;
-  }
+}
   
-  nav li {
-    float: left; /* Ensure dropdown is positioned relative to the parent */
-  }
-  
-  /* Navbar Links */
-  nav li a, .dropbtn {
+nav a {
     text-decoration: none;
     color: #046307;
     font-size: 1rem;
     transition: color 0.3s;
-  }
+}
   
-  /* Navbar Hover Effect */
-  nav li a:hover {
-    color: #2f4a03;
+nav a:hover {
+    color: #034a05;
     background-color: #ffe498;
-    border-radius: 20px;
-    transition: 0.09s;
-  }
-  
-  /* Dropdown Menu */
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  /* Dropdown Links */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  /* Dropdown Hover Effect */
-  .dropdown-content a:hover {
-    background-color: #ffe498; /* Background color for dropdown links */
     border-radius: 10px;
-    color: #046307; /* Text color for dropdown links */
-  }
+    padding: 5px;
+    transition: 0.09s;
+}
   
-  /* Show Dropdown Menu on Hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
 .container {
     display: flex;
     flex-direction: column; 
@@ -125,7 +81,7 @@ nav ul {
 .content h3 {
     text-align: center;  
     margin-top: 17%;
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
     color: #FFFF00;      
     font-size: 35px;   
     text-shadow: 
@@ -146,7 +102,7 @@ nav ul {
 }
 
 .paragraph {
-    text-align: left;  
+    text-align: justify;  
     margin: 20px;
     color: #FFFF00;      
     font-size: 25px;
@@ -155,8 +111,41 @@ nav ul {
     -2px 2px 0 black,  /* Bottom left shadow */
     2px -2px 0 black,  /* Top right shadow */
     -2px -2px 0 black; /* Top left shadow */
-
 }
+
+.riport {
+    margin-top: 4%;
+    background-color: rgba(255, 252, 46, 0.8);
+    
+}
+
+.brief h1{
+    text-align: center;
+    margin: 20px;
+    padding-bottom: 1%;
+    font-family: "Cormorant Garamond", serif;
+    color: rgb(0, 0, 0);      
+    font-size: 50px;
+}
+
+.report h3 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #000000;      
+    font-size: 25px;
+}
+.report {
+    text-align: justify;
+    margin: 20px;
+    color: #000000;      
+    font-size: 20px;
+}
+
+.E {margin-bottom: 3%;}
+.T {margin-bottom: 3%;}
+.J {margin-bottom: 3%;}
+.V {margin-bottom: 3%;}
 
 footer {
     background-color: #0d4e26; 
