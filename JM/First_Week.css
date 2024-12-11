@@ -31,6 +31,10 @@ header {
   z-index: 10;
 }
 
+.title {
+  margin-top: 6%;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -67,7 +71,7 @@ nav a:hover {
   font-size: 2.5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: rgb(13, 78, 38, 0.9);
+  color: #0d4e26e6;
   text-align: center; 
 }
 
